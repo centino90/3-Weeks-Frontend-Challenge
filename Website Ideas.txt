@@ -1,0 +1,23 @@
+21 site ideas: 7 per week
+
+* Restaurant landing page
+* Facebook Clone
+* SM Mall landing page
+* Twitter Clone
+* San Miguel Parish Site (or any church)	
+* FreeCodeCamp Clone
+* Bayview Website (or any compounds or place)
+* Instagram clone
+* Food Api
+* Youtube clone
+* admin dashboard
+* Github clone
+* color picker with color api
+* frontendmentor clone
+* google map api
+* npm clone
+* weather api
+* webpack clone
+* single page portfolio
+* bootstrap clone
+* anime api

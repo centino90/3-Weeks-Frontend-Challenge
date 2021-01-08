@@ -1,0 +1,12 @@
+*******************
+******* 3 Week Challenge Mechanics (starts in jan 8, ends in jan 29)
+*******************
+
+* 1 week per module (Bootstrap, bulma, etc.)
+
+* Should be only using the intended module per week
+
+* 1 Project per day only
+
+* Should use webpack for the project
+
