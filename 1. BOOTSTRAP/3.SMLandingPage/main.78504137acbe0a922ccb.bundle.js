@@ -1,0 +1,1 @@
+(()=>{"use strict";const s=document.querySelector(".cards");window.innerWidth<=768&&s.classList.add("row-cols-auto"),window.addEventListener("resize",(()=>{window.innerWidth<=768?s.classList.add("row-cols-auto"):s.classList.remove("row-cols-auto")}))})();
