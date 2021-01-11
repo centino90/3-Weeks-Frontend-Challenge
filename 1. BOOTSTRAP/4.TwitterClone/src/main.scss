@@ -1,0 +1,25 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+.page-wrapper {
+    height: 95vh;
+    & section {
+        width: 100%;
+        &:nth-child(1) {
+            background-color: #74cafe;
+            background-image: url(./assets/logo.svg);
+            background-size: 86rem;
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+        }
+    }
+}
+
+.footer {
+    height: 5vh;
+}
+
+svg {
+    width: 1.7rem;
+    fill: #fff;
+}
