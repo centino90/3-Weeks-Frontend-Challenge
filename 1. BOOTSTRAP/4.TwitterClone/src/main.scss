@@ -8,9 +8,9 @@
         &:nth-child(1) {
             background-color: #74cafe;
             background-image: url(./assets/logo.svg);
-            background-size: 86rem;
+            background-size: 154%;
             background-repeat: no-repeat;
-            background-position: 0% 50%;
+            background-position: 10% 42%;
         }
     }
 }
@@ -22,4 +22,83 @@
 svg {
     width: 1.7rem;
     fill: #fff;
+}
+
+#form {
+    @media (min-width: 1640px) {
+        width: 80%;
+        margin: 0 0 0 28%;
+    }
+}
+
+.inp {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    text-overflow: ellipsis;
+    border-radius: .3rem;
+    height: 3.5rem;
+    padding: 2rem .3rem .5rem .3rem;
+    font-size: 1.3rem;
+    &::placeholder {
+        pointer-events: none;
+        visibility: hidden;
+    }
+    &:focus {
+        border: 2px solid #1da1f2;
+        outline: none;
+    }
+}
+
+.inp-wrapper {
+    position: relative;
+    max-width: 13rem;
+    & #forgot {
+        position: absolute;
+        left: .75rem;
+        bottom: -1.75rem;
+        font-size: .85rem;
+        color: #1da1f2;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & input ~ label {
+        pointer-events: none;
+        text-overflow: unset;
+        width: 120%;
+        transition: all .1s ease-in;
+        position: absolute;
+        color: #555;
+        transform: translate(-2%, 20%) scale(.9);
+    }
+    & input:placeholder-shown ~ label {
+        width: 80%;
+        pointer-events: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translate(14%, 60%) scale(1.2);
+    }
+    & input:focus ~ label {
+        transform: translate(-2%, 20%) scale(.9);
+        color: #1da1f2;
+        pointer-events: none;
+        text-overflow: unset;
+        width: 120%;
+    }
+}
+
+#submit-btn{
+    background-color: #fff;
+    &:hover {
+        background-color: #e8eaebaf;
+    }
+    
+}
+
+#par {
+    @media (min-width: 1400px) {
+        padding-right: 35%;
+    }
 }
