@@ -10,3 +10,5 @@
 * sass (css)
 
 <img src="./snap.png">
+
+<img src="./snap2.png">
