@@ -12,11 +12,26 @@
             background-repeat: no-repeat;
             background-position: 10% 42%;
         }
+        // &:nth-child(2) {
+
+        // }
     }
 }
 
 .footer {
     height: 5vh;
+    & > a {
+        text-decoration: none;
+        color: #555;
+        font-size: .85rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & > span {
+        color: #555;
+        font-size: .85rem;
+    }
 }
 
 svg {
@@ -25,6 +40,10 @@ svg {
 }
 
 #form {
+
+        width: 80%;
+        margin: 0 auto;
+    
     @media (min-width: 1640px) {
         width: 80%;
         margin: 0 0 0 28%;
@@ -100,5 +119,24 @@ svg {
 #par {
     @media (min-width: 1400px) {
         padding-right: 35%;
+    }
+}
+#top {
+    @media (max-width: 1200px) {
+        display: none;
+        border: 1px solid red;
+    }
+}
+#bottom {
+    @media (min-width: 770px) {
+        margin-top: 50%
+    } 
+    @media (min-width:1200px) {
+        margin-top: 30%
+    } 
+}
+#btn-blue,#btn-white {
+    &:hover {
+        opacity: .8;
     }
 }

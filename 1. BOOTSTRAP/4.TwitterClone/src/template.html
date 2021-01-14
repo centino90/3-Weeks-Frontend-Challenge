@@ -12,7 +12,7 @@
 
 <body>
   <div class="page-wrapper d-flex w-100 bg-warning flex-wrap flex-md-nowrap">
-    <section class="flex-1 d-flex justify-content-center align-items-center">
+    <section class="flex-1 d-flex justify-content-center align-items-center order-2 order-md-1">
       <div class="d-flex flex-column gap-5">
         <div class="d-flex">
           <div class="svg d-flex gap-3">
@@ -62,46 +62,66 @@
         </div>
       </div>
     </section>
-    <section class="flex-1 bg-white d-flex justify-content-center align-items-start py-3 px-4 px-xxl-5">
+    <section id="sect2" class="flex-1 bg-white d-flex justify-content-center align-items-start py-3 px-4 px-xxl-5 order-1 order-md-2">
       <div id="form" class="d-flex align-items-center flex-column">
-        <div class="d-flex align-items-center gap-3">
+        <div id="top" class="d-xl-flex align-items-center gap-3 d-sm-none">
           <div class="flex-1 d-flex flex-column inp-wrapper">
             <input id="uname" type="text" class="inp" placeholder=".">
             <label for="uname">Phone, email, or username</label>
           </input>
           </div>
           <div class="flex-1 d-flex flex-column inp-wrapper">
-          <input id="pwd" type="text" class="inp" placeholder=".">
+          <input id="pwd" type="password" class="inp" placeholder=".">
           <label for="pwd">Password</label>
           <a href="#" id="forgot">Forgot password?</a>
         </div>
           <button id="submit-btn" href="#" class="d-flex justify-content-center align-items-center fw-bold align-self-end"
-            style="color: #1da1f2; border:1px solid #1da1f2; border-radius: 2rem;height: 3rem; padding: 0 1.7rem">Log in 
+            style="color: #1da1f2; border:1px solid #1da1f2; border-radius: 2rem;height: 3rem; padding: 0 1.7rem;outline: none;">Log in 
           </button>
         </div>
-        <div id="bottom" class="form row d-flex justify-content-xxl-center gap-3" style="margin-top: 30%;">
+        <div id="bottom" class="form row gap-3">
           <div class="col-12" style="width: 4rem; margin-right: auto;">
             <img src="./assets/logo.svg" alt="twitter">
           </div>
           <div class="col-12 pt-3" id="par">
-            <h2 class="fw-bold text-xxl-center">See what’s happening in the world right now</h1>
+            <h2 class="fw-bold text-xxl-start">See what’s happening in the world right now</h1>
           </div>
           <div class="col-12 pt-4">
             <h6 class="fw-bold">Join Twitter today</h6>
           </div>
           <div class="col-12 col-xxl-8">
-            <a href="#" class="form-control text-white fw-bold text-center" style="background-color: #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0">Sign up</a>
+            <a href="#" id="btn-blue" class="form-control text-white fw-bold text-center" style="background-color: #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0">Sign up</a>
           </div>
           <div class="col-12 col-xxl-8">
-            <a href="#" class="form-control fw-bold text-center" style="border: 1px solid #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0; color: #1da1f2">Log in</a>
+            <a href="#" id="btn-white" class="form-control fw-bold text-center" style="border: 1px solid #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0; color: #1da1f2">Log in</a>
           </div>
         </div>
       </div>
-
-    
+    </section>
+    <section class="d-flex d-md-none order-3 bg-white justify-content-center align-items-center gap-3">
+      <a href="#" id="btn-blue" class="form-control text-white fw-bold text-center flex-1" style="background-color: #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0;height: 3.5rem; width: 30%;">Sign up</a>
+      <a href="#" id="btn-white" class="form-control fw-bold text-center flex-1" style="border: 1px solid #1da1f2; text-decoration: none; border-radius: 8rem; padding: .8rem 0; color: #1da1f2;height: 3.5rem; width: 30%;">Log in</a>
     </section>
   </div>
-  <footer class="footer w-100 h-25">w</footer>
+  <footer class="footer w-100 d-flex flex-wrap justify-content-center gap-3 align-items-center">
+    <a href="#">About</a>
+    <a href="#">Help Center</a>
+    <a href="#">Terms of service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookie Policy</a>
+    <a href="#">Ads info</a>
+    <a href="#">Blog</a>
+    <a href="#">Status</a>
+    <a href="#">Careers</a>
+    <a href="#">Brand Resources</a>
+    <a href="#">Advertising</a>
+    <a href="#">Marketing</a>
+    <a href="#">Twitter for Business</a>
+    <a href="#">Developers</a>
+    <a href="#">Directory</a>
+    <a href="#">Settings</a>
+    <span>© 2021 Twitter, Inc.</span>
+  </footer>
 </body>
 
 </html>
